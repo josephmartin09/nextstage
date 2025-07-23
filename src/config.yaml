@@ -1,6 +1,6 @@
 site:
-  name: FreshBite 🍽
-  site: 'https://freshbite.vercel.app'
+  name: NextStage Tutoring 🍽
+  site: 'https://nextstagetutoring.com'
   base: '/'
   trailingSlash: false
 
@@ -9,23 +9,23 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: FreshBite
-    template: '%s — FreshBite'
+    default: NextStage
+    template: '%s — NextStage Tutoring'
   description: "\U0001F680 Restaurant landing page website"
   robots:
     index: true
     follow: true
-  openGraph:
-    site_name: FreshBite
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@bmunz.dev'
-    site: 'bmunz.dev'
-    cardType: summary_large_image
+  # openGraph:
+  #   site_name: NextState Tutoring
+  #   images:
+  #     - url: '~/assets/images/default.png'
+  #       width: 1200
+  #       height: 628
+  #   type: website
+  # twitter:
+  #   handle: '@bmunz.dev'
+  #   site: 'bmunz.dev'
+  #   cardType: summary_large_image
 
 i18n:
   language: en

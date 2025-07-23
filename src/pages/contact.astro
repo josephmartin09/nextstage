@@ -11,8 +11,8 @@ import ContactUs from '@/components/sections/Contact.astro';
 
 <Layout>
   <ContactUs
-    tagline="Contact"
-    title="Let's get in touch."
+    tagline=""
+    title="Request a lesson"
     subtitle="We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
     isReversed
     image={{
@@ -38,10 +38,16 @@ import ContactUs from '@/components/sections/Contact.astro';
         name: 'phone',
         placeholder: 'Enter your phone number',
       },
+      {
+        label: 'Subject',
+        type: 'text',
+        name: "subject",
+        placeholder: 'Subject'
+      }
     ]}
     textarea={{
-      label: 'Message',
-      placeholder: 'Enter your message',
+      label: 'Description',
+      placeholder: 'Enter some more details about your request',
     }}
   />
 </Layout>

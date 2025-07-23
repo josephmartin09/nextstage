@@ -7,8 +7,8 @@ export const headerData = {
       links: [],
     },
     {
-      text: 'Pricing',
-      href: '/#pricing',
+      text: 'Subjects & Pricing',
+      href: '/#subjects',
       links: [],
     },
     {
@@ -22,5 +22,5 @@ export const headerData = {
       links: [],
     },
   ],
-  actions: [{ text: 'Schedule a Lesson', href: '#callToAction', target: '_blank' }],
+  actions: [{ text: 'Request a Lesson', href: '/contact'}],
 };
