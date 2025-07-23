@@ -12,7 +12,7 @@ export const headerData = {
       links: [],
     },
     {
-      text: 'Lesson Details',
+      text: 'Details',
       href: '/#details',
       links: [],
     },
