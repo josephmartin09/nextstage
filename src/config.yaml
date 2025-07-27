@@ -1,5 +1,5 @@
 site:
-  name: NextStage Tutoring 🍽
+  name: NextStage Tutoring
   site: 'https://nextstagetutoring.com'
   base: '/'
   trailingSlash: false
@@ -11,17 +11,17 @@ metadata:
   title:
     default: NextStage
     template: '%s — NextStage Tutoring'
-  description: "\U0001F680 Restaurant landing page website"
+  description: "\U0001F680 Tutoring landing page website"
   robots:
     index: true
     follow: true
-  # openGraph:
-  #   site_name: NextState Tutoring
-  #   images:
-  #     - url: '~/assets/images/default.png'
-  #       width: 1200
-  #       height: 628
-  #   type: website
+  openGraph:
+    site_name: NextState Tutoring
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
   # twitter:
   #   handle: '@bmunz.dev'
   #   site: 'bmunz.dev'

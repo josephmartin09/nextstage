@@ -32,7 +32,7 @@ subjects_items:
 details: How It Works
 details_items:
   - title: Book Your Session
-    description: Schedule your tutoring session through the website's contact page. By default, tutoring is conducted over Zoom for convenience and safety. If you prefer a local, neutral meetup in San Antonio, please contact us for details.
+    description: Request your tutoring session through the website's contact page. By default, tutoring is conducted over Zoom for convenience and safety. If you prefer a local neutral meetup in San Antonio, please contact us for details.
     icon: tabler:number-1
   - title: Intro Call
     description: Tell us about your learning goals and challenges. This helps create a personalized lesson plan tailored just for you.
