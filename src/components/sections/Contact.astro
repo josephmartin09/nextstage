@@ -3,6 +3,7 @@ import FormContainer from '@/components/ui/FormContainer.astro';
 import Headline from '@/components/ui/Headline.astro';
 import SectionWrapper from '@/components/ui/SectionWrapper.astro';
 import type { Contact } from '@/types';
+
 interface ContactForm {
   name: string;
   email: string;
@@ -14,6 +15,8 @@ const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   tagline = await Astro.slots.render('tagline'),
+  myPhone,
+  myEmail,
   id,
   inputs,
   textarea,
@@ -23,12 +26,25 @@ const {
 
 <SectionWrapper id={id} title={title} subtitle={subtitle} tagline={tagline} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
+    <div class="max-w-xl mx-auto p-4 dark:bg-slate-900 text-center flex flex-col sm:flex-row justify-center gap-6 text-lg rounded-lg border dark:border-gray-700">
+      {myPhone && (
+        <div class="flex items-center justify-center gap-2">
+          <a href={`tel:${myPhone}`} class="text-muted hover:underline">Phone: {myPhone}</a>
+        </div>
+      )}
+      {myEmail && (
+        <div class="flex items-center justify-center gap-2">
+          <a href={`mailto:${myEmail}`} class="text-muted hover:underline">{myEmail}</a>
+        </div>
+      )}
+    </div>
 
   {
     inputs && (
       <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">
         <FormContainer inputs={inputs} textarea={textarea} />
       </div>
+      
     )
   }
 </SectionWrapper>

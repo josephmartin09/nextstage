@@ -6,12 +6,18 @@ import Section1Image from '@assets/images/joe.jpeg';
 import Section2Image from '@assets/images/subjects.jpg';
 import Section3Image from '@assets/images/details.jpg';
 import * as index from './src/pages/index.md';
+import Button from '@components/ui/Button.astro';
 
 const metadata = {
   title: index.frontmatter.company,
   description: index.frontmatter.company_title,
   ignoreTitleTemplate: true,
 };
+
+const callToAction = {
+  href: '/contact',
+  text: 'Request a Lesson'
+}
 ---
 
 <Layout metadata={metadata}>
@@ -65,6 +71,7 @@ const metadata = {
       id="details"
       isReversed
       title=""
+      callToAction={callToAction}
       items={index.frontmatter.details_items}
       image={{
         src: Section3Image,

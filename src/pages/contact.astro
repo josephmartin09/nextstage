@@ -6,18 +6,22 @@ import Headline from '@/components/ui/Headline.astro';
 import Content from '@/components/sections/Content.astro';
 import Button from '@/components/ui/Button.astro';
 import ContactUs from '@/components/sections/Contact.astro';
+
+import * as contactMd from './src/pages/contact.md';
 ---
 
 <Layout>
   <ContactUs
     tagline=""
-    title="Request a lesson"
-    subtitle="We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible."
+    title={contactMd.frontmatter.form_title}
+    subtitle={contactMd.frontmatter.form_subtitle}
     isReversed
     image={{
       src: '',
       alt: '',
     }}
+    myEmail={contactMd.frontmatter.email}
+    myPhone={contactMd.frontmatter.phone}
     inputs={[
       {
         label: 'Name',
