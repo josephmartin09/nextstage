@@ -1,3 +1,1 @@
-# Astro Site Template for restaurants
-## created by bmunz.dev
-
+# Astro Site Template for NextStage Tutoring

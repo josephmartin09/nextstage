@@ -4,7 +4,8 @@ import Headline from '@/components/ui/Headline.astro';
 import SectionWrapper from '@components/ui/SectionWrapper.astro';
 import ItemGrid from '@/components/ui/ItemGrid.astro';
 import Button from '@/components/ui/Button.astro';
-import Image from '@/components/commons/Image.astro';
+//import Image from '@/components/commons/Image.astro';
+import { Image } from "astro:assets"
 
 const {
   title = await Astro.slots.render('title'),

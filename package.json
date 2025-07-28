@@ -7,10 +7,13 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:gh": "astro check && GITHUB=true astro build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/image": "^0.18.0",
     "@astrojs/tailwind": "^5.0.3",
     "@astrolib/seo": "^1.0.0-beta.4",
     "@fontsource-variable/montserrat": "^5.0.16",
@@ -18,7 +21,7 @@
     "@iconify-json/mdi": "^1.1.63",
     "@iconify-json/tabler": "^1.1.102",
     "@tailwindcss/typography": "^0.5.10",
-    "astro": "^4.0.3",
+    "astro": "^5.12.4",
     "astro-icon": "^1.0.1",
     "limax": "^4.1.0",
     "lodash.merge": "^4.6.2",
@@ -31,6 +34,7 @@
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
     "@types/lodash.merge": "^4.6.9",
+    "gh-pages": "^6.3.0",
     "js-yaml": "^4.1.0",
     "prettier-plugin-astro": "^0.12.2"
   }

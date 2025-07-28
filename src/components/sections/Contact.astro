@@ -3,13 +3,7 @@ import FormContainer from '@/components/ui/FormContainer.astro';
 import Headline from '@/components/ui/Headline.astro';
 import SectionWrapper from '@/components/ui/SectionWrapper.astro';
 import type { Contact } from '@/types';
-
-interface ContactForm {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-}
+import type { ListFormat } from 'typescript';
 
 const {
   title = await Astro.slots.render('title'),

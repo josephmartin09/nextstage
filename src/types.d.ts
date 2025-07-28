@@ -302,4 +302,7 @@ export interface MenuContent extends Headline, Widget {
   callToAction?: CallToAction;
 }
 
-export interface Contact extends Headline, Form, Widget {}
+export interface Contact extends Headline, Form, Widget {
+  myPhone?: string;
+  myEmail?: string;
+}

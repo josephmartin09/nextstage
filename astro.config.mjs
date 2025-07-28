@@ -1,4 +1,4 @@
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import icon from 'astro-icon';
 import { SITE } from './src/utils/config.ts';
@@ -8,7 +8,7 @@ const isGitHub = process.env.GITHUB === 'true';
 // https://astro.build/config
 export default defineConfig({
   site: SITE.site,
-  base: isGitHub ? '/your-repo-name/' : '/',
+  base: isGitHub ? '/' : '/',
   outDir: 'dist',
   integrations: [
     icon({
@@ -31,7 +31,4 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
-  image: {
-    service: squooshImageService(),
-  },
 });
