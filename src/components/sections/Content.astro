@@ -22,8 +22,6 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props as Content;
-
-console.log(callToAction)
 ---
 
 <SectionWrapper id={id} isDark={isDark} classes={classes} bg={bg} isAfterContent={isAfterContent}>
