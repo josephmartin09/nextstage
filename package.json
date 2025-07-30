@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "rm -rf dist/ && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "build:gh": "astro check && GITHUB=true astro build",
+    "build:gh": "rm -rf dist/ && astro check && GITHUB=true astro build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
