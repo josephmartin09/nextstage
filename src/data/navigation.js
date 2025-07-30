@@ -22,5 +22,5 @@ export const headerData = {
       links: [],
     },
   ],
-  actions: [{ text: 'Request a Lesson', href: '/contact'}],
+  actions: [{ text: 'Request a Lesson', href: 'contact'}],
 };

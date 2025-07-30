@@ -47,6 +47,8 @@ const {
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+const base = import.meta.env.BASE_URL;
+const isHome = Astro.url.pathname === base;
 ---
 
 <header
@@ -112,7 +114,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     'hover:text-link dark:hover:text-white px-4 py-3 flex items-centers',
                     { 'aw-link-active': href === currentPath },
                   ]}
-                  href={href}
+                  href={href?.startsWith('#') ? `${base}${href}` : `${base}${href}`}
                 >
                   {text}
                 </a>
