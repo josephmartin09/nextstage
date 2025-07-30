@@ -114,7 +114,7 @@ const isHome = Astro.url.pathname === base;
                     'hover:text-link dark:hover:text-white px-4 py-3 flex items-centers',
                     { 'aw-link-active': href === currentPath },
                   ]}
-                  href={href?.startsWith('#') ? `${base}${href}` : `${base}${href}`}
+                  href={href?.startsWith('#') ? `${base}${href}` :  href}
                 >
                   {text}
                 </a>

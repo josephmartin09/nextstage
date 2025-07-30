@@ -3,6 +3,7 @@ import type { Form } from '@/types';
 import Button from '@/components/ui/Button.astro';
 
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } = Astro.props as Form;
+const base = import.meta.env.BASE_URL || '/';
 ---
 
 <form

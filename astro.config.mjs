@@ -7,8 +7,8 @@ const isGitHub = process.env.GITHUB === 'true';
 
 // https://astro.build/config
 export default defineConfig({
-  site: isGitHub ? 'https://josephmartin09.github.io/nextstage': 'http://localhost:4321',
-  base: '/nextstage',
+  site: isGitHub ? 'https://nextstagetutoring.com': 'http://localhost:4321',
+  base: '/',
   outDir: 'dist',
   integrations: [
     icon({

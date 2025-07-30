@@ -3,17 +3,17 @@ export const headerData = {
   links: [
     {
       text: 'About',
-      href: '/#about',
+      href: '#about',
       links: [],
     },
     {
       text: 'Subjects & Pricing',
-      href: '/#subjects',
+      href: '#subjects',
       links: [],
     },
     {
       text: 'Details',
-      href: '/#details',
+      href: '#details',
       links: [],
     },
     {
